@@ -25,7 +25,7 @@ public class IndexController {
 	}
 
 	@GetMapping("/inform")
-	public String apply() {
+	public String inform     () {
 		return "demo/companyInform";
 	}
 
@@ -38,12 +38,22 @@ public class IndexController {
 	public String index() {
 		return "/index";
 	}
-
+	
+	
+	@GetMapping("/apply")
+	public String apply() {
+		return "demo/apply";
+	}
+	
+	
+	
+	//사진업로드 테스트
 	@PostMapping("/upload")
 	public @ResponseBody String create(@RequestPart MultipartFile file) {
 		String fileName = file.getOriginalFilename();
 		System.out.println("fileName : " + fileName);
 		// 사진을 받았는데, file을 받았는데(DB에 넣을지, 서버 하드디스크에 기록할지)
+		
 		String filePath = "c:\\upload\\" + fileName;
 		System.out.println("filePath:" + filePath);
 		// String filePath = path + fileName;

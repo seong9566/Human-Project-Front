@@ -63,7 +63,11 @@ h1 {
 #right {
 	margin-top: 50px;
 	margin-right: 100px;
-	float: right;
+	float: right; 
+}
+
+.left_input{
+	padding-bottom:10px;
 }
 
 .mozip {

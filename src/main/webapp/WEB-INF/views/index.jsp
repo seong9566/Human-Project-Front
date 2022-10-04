@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>사진</h1>
+<h1>사진업로드테스트</h1>
 <img src="/upload/KakaoTalk_20221003_223408862.jpg"/>
 <hr/>
 <h1>index Page</h1>
