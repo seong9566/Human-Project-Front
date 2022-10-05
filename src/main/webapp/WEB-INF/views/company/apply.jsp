@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,7 +16,7 @@
 <link
 	href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css"
 	rel="stylesheet">
-<script
+<script 
 	src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
 <style>
 * {

@@ -24,9 +24,9 @@ public class IndexController {
 		return "company/login";
 	}
 
-	@GetMapping("/inform")
-	public String inform() {
-		return "company/inform";
+	@GetMapping("/companyInsert")
+	public String companyInsert() {
+		return "company/companyInsert";
 	}
 
 	@GetMapping("/demo")
@@ -54,6 +54,38 @@ public class IndexController {
 	public String footer() {
 		return "layout/footer";
 	}
+	
+	@GetMapping("/personalList")
+	public String personalList() {
+		return "company/personalList";
+	}
+	@GetMapping("/recommend")
+	public String recommend() {
+		return "company/recommend";
+	}
+	
+	@GetMapping("/update")
+	public String update() {
+		return "company/update";
+	}
+	
+	@GetMapping("/inform")
+	public String inform() {
+		return "company/inform";
+	}
+	
+	
+	 
+	
+	
+	/////////////////////////////////////////////////////
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	//사진업로드 테스트
