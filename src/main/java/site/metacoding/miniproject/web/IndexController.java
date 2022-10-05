@@ -16,35 +16,44 @@ public class IndexController {
 
 	@GetMapping("/")
 	public String companyMain() {
-		return "demo/companyMain";
+		return "company/main";
 	}
 
 	@GetMapping("/login")
 	public String login() {
-		return "demo/login";
+		return "company/login";
 	}
 
 	@GetMapping("/inform")
-	public String inform     () {
-		return "demo/companyInform";
+	public String inform() {
+		return "company/inform";
 	}
 
 	@GetMapping("/demo")
 	public String demo() {
-		return "demo/demo";
+		return "test/demo";
 	}
 
 	@GetMapping("/index")
 	public String index() {
-		return "/index";
+		return "test/index";
 	}
 	
 	
 	@GetMapping("/apply")
 	public String apply() {
-		return "demo/apply";
+		return "company/apply";
 	}
 	
+	@GetMapping("/header")
+	public String header() {
+		return "layout/header";
+	}
+	
+	@GetMapping("/footer")
+	public String footer() {
+		return "layout/footer";
+	}
 	
 	
 	//사진업로드 테스트
