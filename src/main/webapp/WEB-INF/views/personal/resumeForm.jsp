@@ -81,8 +81,11 @@ img {
 		<div class=wrap>
 			<input id="id" type="hidden" value="${personal.Id}">
 			<div id="userId">sopu5555</div>
+			<br />
 			<div id="userName">¹Úµ¿ÈÆ</div>
+			<br />
 			<div id="phonenumber">01024102957</div>
+			<br />
 			<div id="email">sop55544@gmail.com</div>
 		</div>
 		<div class=picture>
@@ -134,10 +137,8 @@ img {
       img.setAttribute('src', e.target.result);
       img.setAttribute('data-file', file.name);
       li.appendChild(img);
-
       return li;
     }
-
     const realUpload = document.querySelector('.real-upload');
     const upload = document.querySelector('.upload');
 

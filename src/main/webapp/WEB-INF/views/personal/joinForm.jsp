@@ -35,14 +35,12 @@
 				<input id="phonenumber" type="text" class="form-control"
 					placeholder="전화번호를 입력해주세요">
 			</div>
-				<label><input type="radio" name="choose" id="company_id">기업용</label> 
-				<label><input type="radio" name="choose" id="personal_id">개인용</label>
-				<div>
-				<label><input type="checkbox" id="frontend">포런트엔드</label>
-				<label><input type="checkbox" value="backend">백엔드</label>
-				<label><input type="checkbox" value="server">서버</label>
-				<input id="etc" type="text" class="form-control" placeholder = "보유한 다른 기술을 입력하세요.">
-				</div> 
+			<div>
+				<label><input type="checkbox" id="frontend">포런트엔드</label> <label><input
+					type="checkbox" value="backend">백엔드</label> <label><input
+					type="checkbox" value="server">서버</label> <input id="etc"
+					type="text" class="form-control" placeholder="보유한 다른 기술을 입력하세요.">
+			</div>
 			<button id="btnJoin" type="button" class="btn btn-primary">회원가입</button>
 		</form>
 	</div>
