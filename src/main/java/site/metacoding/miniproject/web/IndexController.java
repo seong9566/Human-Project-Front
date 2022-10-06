@@ -12,6 +12,6 @@ public class IndexController {
 	}
 	@GetMapping("/")
 	public String joinForm() {
-		return "personal/resumeForm";
+		return "personal/job_posting_board";
 	}
 }
