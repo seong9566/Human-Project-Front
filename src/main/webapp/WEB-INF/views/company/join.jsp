@@ -14,38 +14,42 @@
 </head>
 <body>
 	<div class="container">
-		<form> 
-			<h2>내 정보 - 기업</h2>
+		<form>
+			<h2>내 정보 - 기업수정</h2>
 			<div class="mb-3 mt-3">
-				◆아이디 <input id="userId" type="text" class="form-control" placeholder="아이디를 입력해주세요." readonly>
+				◆아이디 <input id="userId" type="text" class="form-control" placeholder="아이디를 입력해주세요.">
 				<button id="btnUsernameSameCheck" class="btn btn-warning" type="button">아이디 중복체크</button>
 			</div>
 			<div class="mb-3">
-				◆이름 <input id="username" type="text" class="form-control" placeholder="이름을 입력해주세요" readonly>
+				◆비밀번호 <input id="password" type="text" class="form-control" placeholder="비밀번호를 입력해주세요">
 			</div>
 			<div class="mb-3">
-				◆전화번호<input id="email" type="email" class="form-control" placeholder="이메일을 입력해주세요" readonly>
+				비밀번호 확인 <input id="pw2" type="text" class="form-control" placeholder="비밀번호를 입력해주세요">
+			</div>
+
+			<div class="mb-3">
+				◆이름 <input id="username" type="text" class="form-control" placeholder="이름을 입력해주세요">
 			</div>
 			<div class="mb-3">
-				◆이메일<input id="phonenumber" type="text" class="form-control" placeholder="전화번호를 입력해주세요" readonly>
+				◆전화번호<input id="email" type="email" class="form-control" placeholder="이메일을 입력해주세요">
+			</div>
+			<div class="mb-3">
+				◆이메일<input id="phonenumber" type="text" class="form-control" placeholder="전화번호를 입력해주세요">
 			</div>
 			<div class="mb-3">◆주소</div>
-			<input id="member_post" type="text" placeholder="우편번호" readonly onclick="findAddr()" > 
-			<button id="btnJoin" type="button" class="btn btn-primary">우편번호찾기</button><br>
-			<input id="member_addr" type="text" placeholder="주소" style="width:645px;" readonly>
-			<input type="text" placeholder="상세주소" style="width:645px;">
+			<input id="member_post" type="text" placeholder="우편번호" readonly onclick="findAddr()">
+			<button id="btnJoin" type="button" class="btn btn-primary">우편번호찾기</button>
+			<br> <input id="member_addr" type="text" placeholder="주소" style="width: 645px;" readonly> <input type="text" placeholder="상세주소" style="width: 645px;">
 			<div class="mb-3"></div>
 			<div class="mb-3">◆관심분야</div>
 			<div>
-				<label><input type="checkbox" id="frontend">프런트엔드</label><br /> 
-				<label><input type="checkbox" value="backend">백엔드</label><br /> 
-				<label><input type="checkbox" value="devops">데브옴스</label><br /> 
-				<label><input type="checkbox" value="etc">상관없음</label>
+				<label><input type="checkbox" id="frontend">프런트엔드</label><br /> <label><input type="checkbox" value="backend">백엔드</label><br /> <label><input type="checkbox"
+					value="devops">데브옴스</label><br /> <label><input type="checkbox" value="etc">상관없음</label>
 			</div>
 		</form>
 		<div class="mb-5"></div>
 		<div class="d-grid gap-1 col-2 mx-auto">
-			<button id="btnJoin" type="button" class="btn btn-primary">정보수정</button>
+			<button id="btnJoin" type="button" class="btn btn-primary">수정완료</button>
 		</div>
 
 	</div>
@@ -72,6 +76,19 @@
 							}
 						}
 					}).open();
+
+			$(function() {//비밀번호 확인	
+				$('#pw2').blur(function() {
+					if ($('#pw').val() != $('#pw2').val()) {
+						if ($('#pw2').val() != '') {
+							alert("비밀번호가 일치하지 않습니다.");
+							$('#pw2').val('');
+							$('#pw2').focus();
+						}
+					}
+				})
+			});
+
 		}
 	</script>
 	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>

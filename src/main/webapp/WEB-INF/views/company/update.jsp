@@ -1,53 +1,85 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="EUC-KR">
-<title>ÀÌ·Â¼­°ü¸® »çÀÌÆ®</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-	rel="stylesheet">
-</head>
-<body>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+   pageEncoding="UTF-8"%>
+<%@ include file="../layout/header.jsp"%>
 	<div class="container">
-		<form>
-			<h2>³» Á¤º¸ ¼öÁ¤ - ±â¾÷</h2>
+		<form> 
+			<h2></h2>
 			<div class="mb-3 mt-3">
-				¡ß¾ÆÀÌµğ <input id="userId" type="text" class="form-control"
-					placeholder="¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.">
-				<button id="btnUsernameSameCheck" class="btn btn-warning"
-					type="button">¾ÆÀÌµğ Áßº¹Ã¼Å©</button>
+				â—†ì•„ì´ë”” <input id="userId" type="text" class="form-control" placeholder="ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”." >
+				<button id="btnUsernameSameCheck" class="btn btn-warning" type="button" style="margin-top:10px;">ì•„ì´ë”” ì¤‘ë³µì²´í¬</button>
 			</div>
 			<div class="mb-3">
-				¡ßºñ¹Ğ¹øÈ£ <input id="password" type="password" class="form-control"
-					placeholder="ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä">
+				â—†ì´ë¦„ <input id="username" type="text" class="form-control" placeholder="ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”" >
 			</div>
 			<div class="mb-3">
-				¡ßÀÌ¸§ <input id="username" type="text" class="form-control"
-					placeholder="ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä">
+				â—†ì „í™”ë²ˆí˜¸<input id="email" type="email" class="form-control" placeholder="ì´ë©”ì¼ì„ ì…ë ¥í•´ì£¼ì„¸ìš”" >
 			</div>
 			<div class="mb-3">
-				¡ßÀüÈ­¹øÈ£<input id="email" type="email" class="form-control"
-					placeholder="ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä">
+				â—†ì´ë©”ì¼<input id="phonenumber" type="text" class="form-control" placeholder="ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”" >
 			</div>
-			<div class="mb-3">
-				¡ßÀÌ¸ŞÀÏ<input id="phonenumber" type="text" class="form-control"
-					placeholder="ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä">
-			</div>
-			<div class="mb-3">¡ß°ü½ÉºĞ¾ß</div>
+			<div class="mb-3">â—†ì£¼ì†Œ</div>
+			<input id="member_post" type="text" placeholder="ìš°í¸ë²ˆí˜¸" readonly onclick="findAddr()" > 
+			<button id="btnJoin" type="button" class="btn btn-primary">ìš°í¸ë²ˆí˜¸ì°¾ê¸°</button><br>
+			<input id="member_addr" type="text" placeholder="ì£¼ì†Œ" style="width:645px;" readonly>
+			<input type="text" placeholder="ìƒì„¸ì£¼ì†Œ" style="width:645px;">
+			<div class="mb-3"></div>
+			<input type="file" id="fileUpload" accept='image/*' /> <img
+               id="previewImg" style="height:250px;" />
+			
+			<div class="mb-3">â—†ê´€ì‹¬ë¶„ì•¼</div>
 			<div>
-				<label> <input type="checkbox" id="frontend">Æ÷·±Æ®¿£µå
-				</label> <label><input type="checkbox" value="backend">¹é¿£µå</label> <label><input
-					type="checkbox" value="server">¼­¹ö</label> <input id="etc"
-					type="text" class="form-control" placeholder="º¸À¯ÇÑ ´Ù¸¥ ±â¼úÀ» ÀÔ·ÂÇÏ¼¼¿ä.">
+				<label><input type="checkbox" id="frontend">í”„ëŸ°íŠ¸ì—”ë“œ</label><br /> 
+				<label><input type="checkbox" value="backend">ë°±ì—”ë“œ</label><br /> 
+				<label><input type="checkbox" value="devops">ë°ë¸Œì˜´ìŠ¤</label><br /> 
+				<label><input type="checkbox" value="etc">ìƒê´€ì—†ìŒ</label>
 			</div>
 		</form>
 		<div class="mb-5"></div>
 		<div class="d-grid gap-1 col-2 mx-auto">
-			<button id="btnJoin" type="button" class="btn btn-primary">¼öÁ¤¿Ï·á</button>
+			<button id="btnJoin" type="button" class="btn btn-primary">ìˆ˜ì •ì™„ë£Œ</button>
 		</div>
+
 	</div>
+
+	<script>
+		function findAddr() {
+			new daum.Postcode(
+					{
+						oncomplete : function(data) {
+
+							console.log(data);
+
+							// íŒì—…ì—ì„œ ê²€ìƒ‰ê²°ê³¼ í•­ëª©ì„ í´ë¦­í–ˆì„ë•Œ ì‹¤í–‰í•  ì½”ë“œë¥¼ ì‘ì„±í•˜ëŠ” ë¶€ë¶„.
+							// ë„ë¡œëª… ì£¼ì†Œì˜ ë…¸ì¶œ ê·œì¹™ì— ë”°ë¼ ì£¼ì†Œë¥¼ í‘œì‹œí•œë‹¤.
+							// ë‚´ë ¤ì˜¤ëŠ” ë³€ìˆ˜ê°€ ê°’ì´ ì—†ëŠ” ê²½ìš°ì—” ê³µë°±('')ê°’ì„ ê°€ì§€ë¯€ë¡œ, ì´ë¥¼ ì°¸ê³ í•˜ì—¬ ë¶„ê¸° í•œë‹¤.
+							var roadAddr = data.roadAddress; // ë„ë¡œëª… ì£¼ì†Œ ë³€ìˆ˜
+							var jibunAddr = data.jibunAddress; // ì§€ë²ˆ ì£¼ì†Œ ë³€ìˆ˜
+							// ìš°í¸ë²ˆí˜¸ì™€ ì£¼ì†Œ ì •ë³´ë¥¼ í•´ë‹¹ í•„ë“œì— ë„£ëŠ”ë‹¤.
+							document.getElementById('member_post').value = data.zonecode;
+							if (roadAddr !== '') {
+								document.getElementById("member_addr").value = roadAddr;
+							} else if (jibunAddr !== '') {
+								document.getElementById("member_addr").value = jibunAddr;
+							}
+						}
+					}).open();
+		}
+		
+		
+		
+		const fileInput = document.getElementById("fileUpload");
+	       const handleFiles = (e) => {
+	           const selectedFile = [...fileInput.files];
+	           const fileReader = new FileReader();
+	           fileReader.readAsDataURL(selectedFile[0]);
+	           fileReader.onload = function () {
+	               document.getElementById("previewImg").src = fileReader.result;
+	           };
+	       };
+	       fileInput.addEventListener("change", handleFiles);
+		
+	</script>
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	
 </body>
 </html>

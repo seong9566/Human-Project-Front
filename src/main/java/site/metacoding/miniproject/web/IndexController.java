@@ -74,12 +74,21 @@ public class IndexController {
 		return "company/inform";
 	}
 	
+	@GetMapping("/join")
+	public String join() {
+		return "company/join";
+	}
+	
 	
 	 
 	
 	
 	/////////////////////////////////////////////////////
-	
+	//personal
+	@GetMapping("/main1")
+	public String main1() {
+		return "personal/main";
+	}
 	
 	
 	

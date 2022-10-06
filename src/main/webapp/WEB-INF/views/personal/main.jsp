@@ -54,7 +54,7 @@ h5 {
 </style>
 </head>
 <body>
-	<h2>기업 메이페이지</h2>
+	<h2>개인 메인페이지</h2>
 
 	<div class="container mt-3" style="border: 3px solid #000000">
 		<div class="row row-cols-1 row-cols-md-3 g-4">
@@ -103,23 +103,23 @@ h5 {
 
 
 	<div id="apply" class="container p-4 my-4 border">
-		<div class="lineheight" ><span>이력서1</span></div>
+		<div class="lineheight" ><span>회사구인글</span></div>
 		<img class="text-right" src="/image/1.jpg" id="image">
 	</div>
 		<div id="apply" class="container p-4 my-4 border">
-		<div class="lineheight" ><span>이력서2</span></div>
+		<div class="lineheight" ><span>회사구인글</span></div>
 		<img class="text-right" src="/image/1.jpg" id="image">
 	</div>
 		<div id="apply" class="container p-4 my-4 border">
-		<div class="lineheight" ><span>이력서3</span></div>
+		<div class="lineheight" ><span>회사구인글</span></div>
 		<img class="text-right" src="/image/1.jpg" id="image">
 	</div>
 		<div id="apply" class="container p-4 my-4 border">
-		<div class="lineheight" ><span>이력서4</span></div>
+		<div class="lineheight" ><span>회사구인글</span></div>
 		<img class="text-right" src="/image/1.jpg" id="image">
 	</div>
 		<div id="apply" class="container p-4 my-4 border">
-		<div class="lineheight" ><span>이력서5</span></div>
+		<div class="lineheight" ><span>회사구인글</span></div>
 		<img class="text-right" src="/image/1.jpg" id="image">
 	</div>
 
