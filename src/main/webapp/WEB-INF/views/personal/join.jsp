@@ -43,7 +43,7 @@
 	</form>
 	<div class="mb-5"></div>
 	<div class="d-grid gap-1 col-2 mx-auto">
-		<button id="btnJoin" type="button" class="btn btn-primary">수정완료</button>
+		<button id="btnSave" type="button" class="btn btn-primary">수정완료</button>
 	</div>
 
 </div>

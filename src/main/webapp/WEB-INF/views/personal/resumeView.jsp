@@ -4,7 +4,7 @@
 
 	<div id="main">
 		<br /> <input id="resume_title" type="text" class="form-control"
-			placeholder="이력서 제목을 입력해주세요.">
+			placeholder="이력서 제목을 입력해주세요." readonly>
 		<div class="tool">
 			<div class="left">
 				<br />
@@ -31,7 +31,7 @@
 		</div>
 
 		<div class="btn-update">
-			<button id="btnSave" type="button" class="btn btn-primary">저장하기</button>
+			<button id="btnUpdate" type="button" class="btn btn-primary">수정하러가기</button>
 		</div>
 
 	</div>
