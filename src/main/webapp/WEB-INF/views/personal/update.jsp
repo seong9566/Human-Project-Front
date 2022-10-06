@@ -26,11 +26,11 @@
 				placeholder="이름을 입력해주세요">
 		</div>
 		<div class="mb-3">
-			◆전화번호<input id="email" type="email" class="form-control"
+			◆전화번호<input id="phonenumber" type="text" class="form-control"
 				placeholder="전화번호를 입력해주세요">
 		</div>
 		<div class="mb-3">
-			◆이메일<input id="phonenumber" type="text" class="form-control"
+			◆이메일<input id="email" type="email" class="form-control"
 				placeholder="이메일을 입력해주세요">
 		</div>
 		<div class="mb-3" style="margin-top: 30px">◆관심분야</div>
