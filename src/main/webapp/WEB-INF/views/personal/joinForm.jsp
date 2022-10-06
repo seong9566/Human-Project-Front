@@ -36,10 +36,10 @@
 					placeholder="전화번호를 입력해주세요">
 			</div>
 			<div>
-				<label><input type="checkbox" id="frontend">포런트엔드</label> <label><input
-					type="checkbox" value="backend">백엔드</label> <label><input
-					type="checkbox" value="server">서버</label> <input id="etc"
-					type="text" class="form-control" placeholder="보유한 다른 기술을 입력하세요.">
+				<label><input type="checkbox" id="frontend">프런트엔드</label><br/> <label><input
+					type="checkbox" value="backend">백엔드</label><br/> <label><input
+					type="checkbox" value="devops">데브옴스</label><br/> <label><input
+					type="checkbox" value="etc">상관없음</label> 
 			</div>
 			<button id="btnJoin" type="button" class="btn btn-primary">회원가입</button>
 		</form>
