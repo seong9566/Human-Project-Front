@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,6 +56,9 @@ h5 {
 </head>
 <body>
 	<h2>기업 메이페이지</h2>
+=======
+<%@ include file="../layout/header.jsp"%>
+>>>>>>> 52168b6 (메인메뉴,로그인,내정보,수정,회원가입 validation빼고 초안최종완료)
 
 	<div class="container mt-3" style="border: 3px solid #000000">
 		<div class="row row-cols-1 row-cols-md-3 g-4">
@@ -124,6 +128,4 @@ h5 {
 	</div>
 
 
-</body>
-
-</html>
+<%@ include file="../layout/footer.jsp"%>
