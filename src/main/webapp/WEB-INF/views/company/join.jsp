@@ -39,7 +39,7 @@
 		<div class="mb-3">◆사진</div>
 		<div class="mb-3"></div>
 		<img id="previewImg" style="height: 250px;" /><br /> <input
-			type="file" id="fileUpload" accept='image/*' />
+			type="file" id="fileUpload" accept='image/*' style="margin-left:0;" />
 
 		<div class="mb-3">◆주소</div>
 		<input id="post" type="text" placeholder="우편번호" readonly
@@ -174,11 +174,7 @@
 		       username.focus();
 		       return false;
 		   }
-		  
-			  
-			  
-			  
-		 	  
+		    
 		  var reg = /^[0-9]+/g; //숫자만 입력하는 정규식
 		  
 		  //전화번호 입력하지 않았을때

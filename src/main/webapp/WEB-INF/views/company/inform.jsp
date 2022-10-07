@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="mb-3"></div>
-		<img id="previewImg" style="height: 250px;" /><br /> <input type="file" id="fileUpload" accept='image/*' />
+		<img id="previewImg" style="height: 250px;" /><br /> <input type="file" id="fileUpload" accept='image/*' style="margin-left:0;" />
 
 		<div class="mb-3">◆주소</div>
 		<input id="member_post" type="text" placeholder="우편번호" readonly>

@@ -79,6 +79,32 @@ public class IndexController {
 		return "company/join";
 	}
 	
+	@GetMapping("/bb1")
+	public String bb1() {
+		return "company/bb1";
+	}
+	
+	@GetMapping("/bb2")
+	public String bb2() {
+		return "company/bb2";
+	}
+	
+	@GetMapping("/bestcompany")
+	public String bb3() {
+		return "company/bestcompany";
+	}
+	
+	@GetMapping("/resume")
+	public String resume() {
+		return "company/resume";
+	}
+	
+	@GetMapping("/bb5")
+	public String bb5() {
+		return "company/bb5";
+	}
+	
+	
 	
 	 
 	

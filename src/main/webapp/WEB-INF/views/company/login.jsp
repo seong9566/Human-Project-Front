@@ -18,7 +18,8 @@
 
 			<div class="d-flex justify-content-around">
 				<button id="login" type="button" class="btn btn-primary">로그인</button>
-				<button id="join" type="button" class="btn btn-primary">회원가입</button>
+				<button id="join" type="button" class="btn btn-primary">개인용 회원가입</button>
+				<button id="join" type="button" class="btn btn-primary">기업용 회원가입</button>
 			</div>
 		</form>
 	</div>

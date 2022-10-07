@@ -15,6 +15,7 @@
 <script src="/webjars/sockjs-client/sockjs.min.js"></script>
 <script src="/webjars/stomp-websocket/stomp.min.js"></script>
 <link rel="stylesheet" href="/css/mainForm.css">
+<link rel="stylesheet" href="/css/writeForm.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -27,7 +28,7 @@
 				<ul class="navbar-nav">
 					<c:choose>
 						<c:when test="${empty principal}">
-							<li class="nav-item"><a class="nav-link" href="/loginForm">로그인/회원가입</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">로그인/회원가입</a></li>
 						</c:when>
 						<c:otherwise>
 							<li class="nav-item"><a class="nav-link" href="#">관심 이력서 보기</a></li>
