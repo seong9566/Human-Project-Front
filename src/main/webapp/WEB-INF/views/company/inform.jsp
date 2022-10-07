@@ -20,13 +20,11 @@
 		</div>
 
 		<div class="mb-3"></div>
-		<img id="previewImg" style="height: 250px;" /><br /> <input type="file" id="fileUpload" accept='image/*' style="margin-left:0;" />
+		<img id="previewImg" style="height: 250px;" /><br /> <input type="file" id="fileUpload" accept='image/*' style="margin-left: 0;" />
 
 		<div class="mb-3">◆주소</div>
-		<input id="member_post" type="text" placeholder="우편번호" readonly>
-
-		<br> 
-		<input id="member_addr" type="text" placeholder="주소" style="width: 620px;" readonly><input type="text" placeholder="상세주소" style="width: 620px;">
+		<input id="member_post" type="text" placeholder="우편번호" readonly> <br> <input id="member_addr" type="text" placeholder="주소" style="width: 620px;" readonly><input type="text"
+			placeholder="상세주소" style="width: 620px;">
 
 		<div class="mb-3" style="margin-top: 30px">◆관심분야</div>
 		<div>
@@ -41,13 +39,10 @@
 
 </div>
 
-<script>
-	$('#etc').click(function() {
-		var checked = $('#etc').is(':checked');
-		if (checked)
-			$('input:checkbox').prop('checked', true);
-	});
+<script src="js/company.js">
+	
 </script>
+
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
 <%@ include file="../layout/footer.jsp"%>

@@ -7,11 +7,11 @@
 			<div class="mb-3 mt-3">
 				<h3>◆아이디</h3>
 
-				<input id="id" type="text" class="form-control" placeholder="Enter id">
+				<input id="id" type="text" class="form-control" placeholder="id를 입력하세요">
 			</div>
 			<div class="mb-3 mt-3">
 				<h3>◆비밀번호</h3>
-				<input id="password" type="password" class="form-control" placeholder="Enter password">
+				<input id="password" type="password" class="form-control" placeholder="password를 입력하세요">
 
 
 			</div>
