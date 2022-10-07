@@ -49,7 +49,7 @@
 		<button id="detailAddress" type="button" class="btn btn-primary"
 			onclick="findAddr()">우편번호수정</button>
 		<br> <input id="addr" type="text" placeholder="주소"
-			style="width: 620px;" readonly><input type="text"
+			style="width: 620px;" readonly><input id="detailAddress"  type="text"
 			placeholder="상세주소" style="width: 620px;">
 
 		<div class="mb-3" style="margin-top: 30px">◆관심분야</div>
