@@ -3,7 +3,7 @@
 
 	<div class="container mt-3" style="border: 3px solid #000000">
 		<div class="row row-cols-1 row-cols-md-3 g-4">
-			<div id="box" class="col">
+			<div id="box1" class="col">
 				<div class="card h-100">
 					<img src="/image/1.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
@@ -11,7 +11,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="box" class="col">
+			<div id="box2" class="col">
 				<div class="card h-100">
 					<img src="/image/1.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
@@ -19,7 +19,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="box" class="col">
+			<div id="box3" class="col">
 				<div class="card h-100">
 					<img src="/image/1.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
