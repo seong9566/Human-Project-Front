@@ -14,12 +14,6 @@
 			◆비밀번호 <input id="password1" type="password" class="form-control"
 				placeholder="비밀번호를 입력해주세요" readonly>
 		</div>
-		<div class="mb-3">
-			◆비밀번호 확인 <input id="password2" type="password" class="form-control"
-				placeholder="비밀번호를 입력해주세요" readonly>
-		</div>
-		<button type="button" class="btn btn-primary" onclick="test()">비밀번호
-			확인</button>
 		<div class="mb-3"></div>
 		<div class="mb-3">
 			◆이름 <input id="username" type="text" class="form-control"
@@ -46,30 +40,4 @@
 		<button id="btnUpdate" type="button" class="btn btn-primary">정보수정</button>
 	</div>
 </div>
-
-<script>
-	function test() {
-		var p1 = document.getElementById('password1').value;
-		var p2 = document.getElementById('password2').value;
-		if (p1 != p2) {
-			alert("비밀번호가 일치 하지 않습니다");
-			return false;
-		} else {
-			alert("비밀번호가 일치합니다");
-			return true;
-		}
-
-	}
-
-	$('#etc').click(function() {
-		var checked = $('#etc').is(':checked');
-
-		if (checked)
-			$('input:checkbox').prop('checked', true);
-	});
-</script>
-<script
-	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-
-</body>
-</html>
+<%@ include file="../personallayout/footer.jsp"%>

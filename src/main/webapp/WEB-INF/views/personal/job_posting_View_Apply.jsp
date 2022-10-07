@@ -20,7 +20,7 @@
 				<div id="adress">부산 북구 화명3동 코오롱 하늘채 110동 504호</div>
 			</div>
 		</div>
-		<div>❤</div>
+		<div>좋아요 수 : 👍</div>
 		<div class="right">
 
  <img id="previewImg" />
@@ -28,7 +28,7 @@
 	</div>
 	<input type="file" Id="fileUpload" accept='image/*' /> <br /> <br />
 	<div class="form">
-		<h2>모집조건 및 안내사항 작성</h2>
+		<h2>모집조건 및 안내사항</h2>
 		<div id="summernote"></div>
 	</div>
 
@@ -40,32 +40,8 @@
 </div>
 
 
-<script>
-	 const fileInput = document.getElementById("fileUpload");
-	    const handleFiles = (e) => {
-	        const selectedFile = [...fileInput.files];
-	        const fileReader = new FileReader();
-	        fileReader.readAsDataURL(selectedFile[0]);
-	        fileReader.onload = function () {
-	            document.getElementById("previewImg").src = fileReader.result;
-	        };
-	    };
-	    fileInput.addEventListener("change", handleFiles);
-	    $('#summernote').summernote({
-	        placeholder: 'Hello stand alone ui',
-	        tabsize: 2,
-	        height: 120,
-	        toolbar: [
-	          ['style', ['style']],
-	          ['font', ['bold', 'underline', 'clear']],
-	          ['color', ['color']],
-	          ['para', ['ul', 'ol', 'paragraph']],
-	          ['table', ['table']],
-	          ['insert', ['link', 'picture', 'video']],
-	          ['view', ['fullscreen', 'codeview', 'help']]
-	        ]
-	      });
+<script src="/js/writeForm.js">
+
    </script>
 
-</body>
-</html>
+<%@ include file="../personallayout/footer.jsp"%>

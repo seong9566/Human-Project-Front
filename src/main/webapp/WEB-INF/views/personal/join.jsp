@@ -43,34 +43,11 @@
 	</form>
 	<div class="mb-5"></div>
 	<div class="d-grid gap-1 col-2 mx-auto">
-		<button id="btnSave" type="button" class="btn btn-primary">수정완료</button>
+		<button id="btnSave" type="button" class="btn btn-primary" onclick="joinform_check()">작성완료</button>
 	</div>
 
 </div>
+<script src="/js/join.js">
 
-<script>
-	function test() {
-		var p1 = document.getElementById('password1').value;
-		var p2 = document.getElementById('password2').value;
-		if (p1 != p2) {
-			alert("비밀번호가 일치 하지 않습니다");
-			return false;
-		} else {
-			alert("비밀번호가 일치합니다");
-			return true;
-		}
-
-	}
-
-	$('#etc').click(function() {
-		var checked = $('#etc').is(':checked');
-
-		if (checked)
-			$('input:checkbox').prop('checked', true);
-	});
 </script>
-<script
-	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-
-</body>
-</html>
+<%@ include file="../personallayout/footer.jsp"%>

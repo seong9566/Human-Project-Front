@@ -11,7 +11,7 @@ public class IndexController {
 		return "index";
 	}
 	@GetMapping("/")
-	public String joinForm() {
-		return "personal/job_posting_View_Apply";
+	public String companyinform() {
+		return "personal/companyinform";
 	}
 }
