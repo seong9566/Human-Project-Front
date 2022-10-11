@@ -33,10 +33,21 @@ const handleFiles = (e) => {
 fileInput.addEventListener("change", handleFiles);
 
 
-//체크박스 
-$('#etc').click(function() {
-	var checked = $('#etc').is(':checked');
-	if (checked)
-		$('input:checkbox').prop('checked', true);
+
+
+//썸머노트
+$('#summernote').summernote({
+	placeholder: 'Hello stand alone ui',
+	tabsize: 2,
+	height: 120,
+	toolbar: [
+		['style', ['style']],
+		['font', ['bold', 'underline', 'clear']],
+		['color', ['color']],
+		['para', ['ul', 'ol', 'paragraph']],
+		['table', ['table']],
+		['insert', ['link', 'picture', 'video']],
+		['view', ['fullscreen', 'codeview', 'help']]
+	]
 });
 

@@ -35,6 +35,7 @@
 		</div>
 		
 	</div>
-	<script src="js/summernote.js"> </script>
+	<script src="/js/company.js"></script>
+	<script src="/js/companyInsert.js"></script>
 </body>
 </html>

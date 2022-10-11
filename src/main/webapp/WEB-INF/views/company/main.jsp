@@ -31,13 +31,7 @@
 	</div>
 	<div class="mb-3"></div>
 	<div class="dropdown">
-		<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">분야선택</button>
-		<ul class="dropdown-menu">
-			<li><a class="dropdown-item" href="#">프론트엔드</a></li>
-			<li><a class="dropdown-item" href="#">서버</a></li>
-			<li><a class="dropdown-item" href="#">백엔드</a></li>
-		</ul>
-			
+		
 			<button class="btn btn-success" type="submit" id="button-addon2" style="float:right;">검색</button>
 			<input type="text"
 			placeholder="검색어 입력" aria-label="search"
@@ -65,4 +59,6 @@
 		<div class="lineheight" ><span>이력서5</span></div>
 		<img class="text-right" src="/image/1.jpg" id="image">
 	</div>
+	
+	<script src="/js/main.js"></script>
 <%@ include file="../layout/footer.jsp"%>

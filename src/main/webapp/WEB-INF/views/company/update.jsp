@@ -52,13 +52,6 @@
 			style="width: 620px;" readonly><input id="detailAddress"  type="text"
 			placeholder="상세주소" style="width: 620px;">
 
-		<div class="mb-3" style="margin-top: 30px">◆관심분야</div>
-		<div>
-			<label><input type="checkbox" id="frontend">프런트엔드</label><br />
-			<label><input type="checkbox" id="backend">백엔드</label><br />
-			<label><input type="checkbox" id="devops">데브옴스</label><br />
-			<label><input type="checkbox" id="etc">상관없음</label>
-		</div>
 	</form>
 	<div class="mb-5"></div>
 	<div class="d-grid gap-1 col-2 mx-auto">
@@ -67,6 +60,7 @@
 	</div>
 </div>
 
+<script src="/js/update.js"></script>
 <script src="/js/available.js"></script>
 <script src="/js/company.js"></script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>

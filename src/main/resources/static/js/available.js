@@ -25,12 +25,17 @@ function joinform_check() {
 	    return false;
 	  };
 	  
+	  
+	  
 	  if (!pwdCheck.test(password2.value)) {
 		    alert("비밀번호 확인을 입력하지 않았습니다.");
 		    password2.focus();
 		    return false;
-		  };
+	  };
 	 
+	  
+	  
+	  
 	  
 	  //이름 입력하지 않았을때
 	  if ((username.value) == ""){
@@ -85,7 +90,10 @@ function joinform_check() {
 		if (p1 != p2) {
 			alert("비밀번호가 일치 하지 않습니다");
 			return false;
-		} else {
+		} else if(p1 == ""){
+			alert("비밀번호를 입력하지 않았습니다.");
+			return false;
+		}else{
 			alert("비밀번호가 일치합니다");
 			return true;
 		}

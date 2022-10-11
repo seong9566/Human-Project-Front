@@ -23,5 +23,5 @@
 			<button type="button" class="btn btn-primary">공고등록하러가기</button>
 		</div>
 	</div>
-
+	<script src="/js/personalList.js"></script>
 <%@ include file="../layout/footer.jsp"%>

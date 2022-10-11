@@ -28,7 +28,7 @@
 
 		<div class="mb-3" style="margin-top: 30px">◆관심분야</div>
 		<div>
-			<label><input type="checkbox" id="frontend">프런트엔드</label><br /> <label><input type="checkbox" id="backend">백엔드</label><br /> <label><input type="checkbox" id="devops">데브옴스</label><br />
+			<label><input type="checkbox" id="frontend">프런트엔드</label><br /> <label><input type="checkbox" id="backend">백엔드</label><br /> <label><input type="checkbox" id="devops">데브옵스</label><br />
 			<label><input type="checkbox" id="etc">상관없음</label>
 		</div>
 	</form>
@@ -39,9 +39,8 @@
 
 </div>
 
-<script src="js/company.js">
-	
-</script>
+<script src="js/company.js"></script>
+<script src="js/inform.js"></script>
 
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
